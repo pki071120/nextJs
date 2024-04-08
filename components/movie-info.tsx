@@ -7,5 +7,9 @@ async function getMovie(id:string){
 
 export default async function MovieInfo({id}: {id:string}){
   const info = await getMovie(id);
-  return <h6>{JSON.stringify(info.title)}</h6>
+  console.log(info.backdrop_path);
+  return <>
+  <img src={info.backdrop_path} alt="경로 못찾음" style={{"width" : "50%",}}/>
+  <h2>{info.title}</h2>
+  </>
 }
