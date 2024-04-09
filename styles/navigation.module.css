@@ -1,8 +1,26 @@
 .nav {
-  background-color: red;
-  padding: 50px 100px;
+  display: flex;
+  position: fixed;
+  top:0;
+  width: 50%;
+  margin: 5px 0;
+  border: 5px solid red;
+  border-radius: 10px;
+  margin: 0 25%;
+  background-color: rgb(186, 0, 0);
+  justify-content: center;
+  z-index: 1;
 }
 
 .nav ul {
   display: flex;
+}
+
+.nav li {
+  margin: 0 5px;
+  border: 2px solid gainsboro;
+  background-color: rgb(255, 128, 128);
+}
+.nav li:hover{
+  background-color: sienna;
 }

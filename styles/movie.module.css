@@ -1,0 +1,23 @@
+.movie {
+  display:inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  filter: brightness(0.8);
+}
+
+.movie:hover{
+  filter: brightness(1.125);
+}
+
+.movie img{
+  display: flex;
+  width: 10rem;
+  border-radius: 5px;
+}
+
+.movie a{
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+}
