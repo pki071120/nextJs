@@ -1,6 +1,6 @@
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-video.module.css"
 
+const API_URL = process.env.REACT_APP_API_KEY;
 async function getVideo(id:string){
   const res = await fetch(`${API_URL}/${id}/videos`);
   return res.json();

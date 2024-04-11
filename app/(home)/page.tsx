@@ -1,10 +1,11 @@
 import Movie from "../../components/movie";
 import stylse from "../../styles/home.module.css";
 
+const API_URL = process.env.REACT_APP_API_KEY;
+
 export const metadata = {
   title: "Home",
 }
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies"
 
 async function getMovies() {
   return fetch(API_URL).then(res => res.json());

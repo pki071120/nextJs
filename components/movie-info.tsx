@@ -1,5 +1,6 @@
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-info.module.css";
+
+const API_URL = process.env.REACT_APP_API_KEY;
 
 export async function getMovie(id:string){
   const res = await fetch(`${API_URL}/${id}`);
