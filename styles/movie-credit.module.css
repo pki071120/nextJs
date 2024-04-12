@@ -1,0 +1,49 @@
+.container{
+  display:flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-around;
+  width: 95%;
+  height: auto;
+  overflow-x: scroll;
+  margin:1rem;
+}
+
+.componentTitle {
+  display:flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit{
+  margin: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile{
+  display:flex;
+  border-radius: 1rem;
+  width: 8rem;
+}
+
+.unknownProfile{
+  width: 8rem;
+  height: 10.53em;
+  border: 0.2em solid rgb(80, 80, 80);
+  border-radius: 1.3rem;
+  text-align: center;
+  line-height: 11rem;
+}
+
+.actName{
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.charName{
+  font-size: 0.8rem;
+  color:rgb(153, 153, 153)
+}
