@@ -2,7 +2,7 @@ import styles from "../styles/movie-video.module.css"
 
 const API_URL = process.env.REACT_APP_API_KEY;
 async function getVideo(id:string){
-  const res = await fetch(`${API_URL}/${id}/videos`);
+  const res = await fetch(`${API_URL}/movies/${id}/videos`);
   return res.json();
 }
 
