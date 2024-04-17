@@ -9,6 +9,6 @@ async function getVideo(id:string){
 export default async function MovieVideos({id}: {id:string}){
   const videos = await getVideo(id);
   return <div className={styles.container}>
-      <iframe key={videos[0].id} src={`https://youtube.com/embed/${videos[0].key}`} title={videos[0].name} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+      {videos[0] !== undefined ? <iframe key={videos[0].id} src={`https://youtube.com/embed/${videos[0].key}`} title={videos[0].name} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/> : null}
   </div>
 }

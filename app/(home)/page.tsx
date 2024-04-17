@@ -7,8 +7,9 @@ export const metadata = {
   title: "Home",
 }
 
-async function getMovies() {
-  return fetch(`${API_URL}/movies`).then(res => res.json());
+export async function getMovies() {
+  const res = await fetch(`${API_URL}/movies`);
+  return res.json();
 }
 
 export default async function HomePage() {

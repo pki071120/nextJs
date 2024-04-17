@@ -10,6 +10,7 @@
 .poster {
   display: flex;
   width: 25rem;
+  height: 40rem;
   border-radius: 1rem;
 }
 

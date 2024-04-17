@@ -19,7 +19,7 @@ export default async function MovieInfo({id}: {id:string}){
     </div>
     <h2 className={styles.runtime}>Runtime : {Math.floor(info.runtime/60)}H {info.runtime%60 == 0 ?null : info.runtime%60+"M"}</h2>
     <h2 className={styles.reviewpoint}>⭐️ {info.vote_average}</h2>
-    <p className={styles.overview}>{info.overview}</p>
+    <p className={styles.overview}>{info.overview.length > 300 ? info.overview.substring(0, 335)+'...' : info.overview}</p>
   </div>
   </div>
 }
